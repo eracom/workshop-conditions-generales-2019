@@ -1,5 +1,23 @@
 # workshop-conditions-generales-2019
 
+Le workshop propose de travailler des outils et des compositions interactives et imprimables permettant de visualiser et comprendre le processus de travail des graphistes et donc sa valeur, mais également les questions de temporalité, de nécessités techniques, etc. Nous interrogerons les formes que peuvent prendre un contrat, un document de conditions générales, et autres « documents types » qui sont rarement mis au devant de la scène et pourtant fondamentaux pour les graphistes.
+
+Vos projets permettront de générer des documents pour plusieurs supports : la notion d’édition hybride concerne des projets existants sous plusieurs formes de publications (papier, écran, performée…) en considérant chaque forme comme complémentaire aux autres.
+
+## conditions / méthodologie de travail en groupe
+
+* se mettre en mode "bienveillance" avec tout le monde, essayer de voir les choses avec enthousiasme et curiosité
+* écouter et faire attention à la répartition de la parole
+* toujours faire des propositions plutôt qu'uniquement des critiques négatives
+* toute contribution a de la valeur et fait avancer le projet — éviter la dévalorisation ou l'auto-dévalorisation (exprimer des doutes si nécessaire mais éviter de commencer par "c'est nul ce que j'ai fait")
+* essayer de voir le meilleur dans chaque proposition et focaliser dessus
+* plutôt que de fonctionner de manière binaire (ça ou ça), tenter de combiner (des idées, des propositions...)
+* se mettre d'accord sur un fil rouge commun, et accepter les tentatives divergentes
+* créer des moments de mise en commun dans le groupe
+* se repartir le travail, changer de rôles pour que tout le monde puisse avoir fait l'expérience des différents rôles et faciliter la reprise du projet en cas d'absence d'une personne
+* partager régulièrement les documents en cours de travail
+
+
 ## exemples de sites:
 * http://brutalistwebsites.com/
 * http://www.ecogex.com/delectable/
