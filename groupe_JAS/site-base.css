@@ -22,18 +22,57 @@ div {
 body {
     font-family: 'Montserrat';
     font-size: 40px;
-    padding: 20px;
-    margin: 0 20%;
 }
 h1 {
     font-weight: normal;
     font-size: 40px;
+    color:green
 }
 p {
     padding-top: 20px;
 }
+.menu {
+  width: 20%;
+  height: 100vh;
+  border: 1px solid black;
+  position: fixed;
+}
+/* tous les divs qui sont dans menu: */
+.menu div {
+  border: 1px solid black;
+  text-align: center;
+}
+.sous-menu  {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  background-color: white;
+  width:300px;
+}
+.sous-menu div {
+  border: 1px solid black;
+  text-align: left;
+}
 .glissable {
     color: red;
+}
+.cartes{
+  position: absolute;
+  background-color: white;
+  width:300px;
+  border: 1px solid black;
+}
+.loyaute {
+  left: 30%;
+  top: 10px;
+}
+.droit-auteur {
+  left: 60%;
+  top: 30px;
+}
+.illegalite {
+  left: 80%;
+  top: 50vh;
 }
 
 /* RESPONSIVE */
