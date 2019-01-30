@@ -21,8 +21,8 @@
   </div>
 
   <div class='menu'>
-    <div class='menu-principal'>HONORAIRES</div>
-    <div class="sous-menu-2">
+    <div class='menu-principal-1'>HONORAIRES</div>
+    <div class="sous-menu-1">
       <div class="menu-chapitres click-entretien">Entretien préalable au projet</div>
       <div class="menu-chapitres click-offres">Offres et facturation des projets de conception</div>
       <div class="menu-chapitres click-facturation">Facturation</div>
@@ -32,8 +32,13 @@
    </div>
 
 
-    <div>DROITS</div>
-  </div>
+    <div class='menu'>
+      <div class='menu-principal-2'>DROIT</div>
+      <div class="sous-menu-2">
+        <div class="menu-chapitres click-droit">Droit applicable</div>
+        <div class="menu-chapitres click-Juridiction">Juridiction compétente</div>
+        <div class="menu-chapitres click-facturation">Facturation</div>
+   </div>
 
   <div class="cartes loyaute glissable">
     loyauté
@@ -104,13 +109,23 @@
           $('.sous-menu').toggle();
         });
 
+        $('.sous-menu-1').hide();
+        $('.menu-principal-1').click(function() {
+          $('.sous-menu-1').toggle();
+        });
 
-
-        $('.menu-principal').click(function() {
+        $('.sous-menu-2').hide();
+        $('.menu-principal-2').click(function() {
           $('.sous-menu-2').toggle();
         });
 
-      $('.sous-menu-2').hide();
+
+
+
+
+
+
+
 
 
 
