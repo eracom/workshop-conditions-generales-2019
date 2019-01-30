@@ -60,6 +60,19 @@ p {
     color: black;
 }
 
+.sous-menu-1 div {
+  border:1px solid black;
+  text-align: left;
+}
+
+.sous-menu-1{
+  position: absolute;
+  left: 100%;
+  top:0px;
+  background-color: white;
+  width:300px;
+}
+
 .sous-menu-2 div {
   border:1px solid black;
   text-align: left;
