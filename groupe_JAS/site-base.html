@@ -10,6 +10,7 @@
     <script src="scripts/jquery-1.9.1.js"></script>
     <script src="scripts/jquery-ui-1.9.2.custom.js"></script>
 </head>
+
 <body>
   <div class='menu'>
     <div class="menu-principal">PRINCIPES</div>
@@ -17,8 +18,20 @@
       <div class="menu-chapitres click-loyaute">loyauté</div>
       <div class="menu-chapitres click-droit-auteur">droit d'auteur</div>
       <div class="menu-chapitres click-illegalite">illégalité</div>
-    </div>
-    <div>HONORAIRES</div>
+  </div>
+
+  <div class='menu'>
+    <div class='menu-principal'>HONORAIRES</div>
+    <div class="sous-menu-2">
+      <div class="menu-chapitres click-entretien">Entretien préalable au projet</div>
+      <div class="menu-chapitres click-offres">Offres et facturation des projets de conception</div>
+      <div class="menu-chapitres click-facturation">Facturation</div>
+      <div class='menu-chapitres click-condition'>Condition de paiement</div>
+      <div class='menu-chapitres click-commissions'>Commissions fournisseurs</div>
+      <div class='menu-chapitres click-litiges'>Litiges relatifs aux honoraires</div>
+   </div>
+
+
     <div>DROITS</div>
   </div>
 
@@ -90,6 +103,16 @@
         $('.menu-principal').click(function() {
           $('.sous-menu').toggle();
         });
+
+
+
+        $('.menu-principal').click(function() {
+          $('.sous-menu-2').toggle();
+        });
+
+      $('.sous-menu-2').hide();
+
+
 
 
     </script>

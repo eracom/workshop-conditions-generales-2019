@@ -42,6 +42,7 @@ p {
   border: 1px solid black;
   text-align: center;
 }
+
 .sous-menu  {
   position: absolute;
   left: 100%;
@@ -49,31 +50,51 @@ p {
   background-color: white;
   width:300px;
 }
+
 .sous-menu div {
   border: 1px solid black;
   text-align: left;
 }
+
 .glissable {
-    color: red;
+    color: black;
 }
+
+.sous-menu-2 div {
+  border:1px solid black;
+  text-align: left;
+}
+
+.sous-menu-2{
+  position: absolute;
+  left: 100%;
+  top:0px;
+  background-color: white;
+  width:300px;
+}
+
 .cartes{
   position: absolute;
   background-color: white;
   width:300px;
   border: 1px solid black;
 }
+
 .loyaute {
   left: 30%;
   top: 10px;
 }
+
 .droit-auteur {
   left: 60%;
   top: 30px;
 }
+
 .illegalite {
   left: 80%;
   top: 50vh;
 }
+
 
 /* RESPONSIVE */
 
