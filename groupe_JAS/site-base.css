@@ -21,7 +21,7 @@ div {
 
 body {
     font-family: 'Montserrat';
-    font-size: 40px;
+    font-size: 20px;
 }
 h1 {
     font-weight: normal;
@@ -49,6 +49,8 @@ p {
   top: 0px;
   background-color: white;
   width:300px;
+}
+
 }
 
 .sous-menu div {
@@ -91,6 +93,13 @@ p {
   background-color: white;
   width:300px;
   border: 1px solid black;
+
+}
+
+.fermer{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .loyaute {
@@ -103,12 +112,85 @@ p {
   top: 30px;
 }
 
-.illegalite {
+.utilisation {
   left: 80%;
   top: 50vh;
 }
 
+.entretien {
+  left: 90%;
+  top: 20vh;
+}
 
+.porte {
+  left: 20%;
+  top: 10vh;
+}
+
+.prestations {
+  left: 15%;
+  top: 12vh;
+}
+
+.sous-traitance {
+  left: 15%;
+  top: 12vh;
+}
+
+.conservation {
+  left: 15%;
+  top: 12vh;
+}
+
+.presentation-individuelles {
+  left: 15%;
+  top: 12vh;
+}
+
+.exemplaires-justificatif {
+  left: 15%;
+  top: 12vh;
+}
+
+.offres {
+  left: 15%;
+  top: 12vh;
+}
+
+.facturation {
+  left: 15%;
+  top: 12vh;
+}
+.condition {
+  left: 15%;
+  top: 12vh;
+}
+
+.commissions {
+  left: 15%;
+  top: 12vh;
+}
+
+.litiges {
+  left: 15%;
+  top: 12vh;
+}
+
+.droit {
+  left: 15%;
+  top: 12vh;
+}
+
+.Juridiction {
+  left: 15%;
+  top: 12vh;
+}
+.color{
+  position:absolute;
+  top:90%
+  
+
+}
 /* RESPONSIVE */
 
 /* ÉCRAN SEULEMENT */
