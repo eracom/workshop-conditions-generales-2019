@@ -289,20 +289,28 @@
   </div>
 </div>
 
-<div class="notes glissable">
+<div class="notes ajoute glissable">
   <input type="text" name="" value="Notes"></input>
   Notes
   <!-- <div contenteditable="true">
   ...  </div> -->
 </div>
 
-<div class="imprimer">
+  <section id="wrapper"></section>
 
-  <a href="javascript:window.print()"><img src="../../images/click-here-to-print.jpg" alt="Imprimer" id="print-button" /></a>
+<div class="imprimer">
+  <a href="javascript:window.print()">Imprimer</a>
+</div>
+
+<div class="rafraichir">
+  Rafraîchir
 
 </div>
 
-
+<div class="memento">
+  Memento
+  <h1 id="groovy">groovy</h1>
+</div>
 
 
 
@@ -388,7 +396,11 @@
 
 
 
-
+        $('.ajoute').click(function() {
+          var div = $('<div class="notes glissable"><p>…</p></div>');
+          div.appendTo('#wrapper');
+          $( ".glissable" ).draggable();
+        });
 
 
 
