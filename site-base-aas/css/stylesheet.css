@@ -50,9 +50,14 @@ ul.menu>li {
 img {
   max-width: 100%;
   filter: color(100%);
+  webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
 }
 
-
+img:hover {
+  webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  filter: blur(0px);
+}
 
 article {
   /*width: 100%;
