@@ -55,23 +55,20 @@ img {
 
 
 article {
-  width: 100%;
-  color: white;
-  @include transform( translateZ(0) );
-  @include text-shadow(3px 3px 0px rgba(196, 23, 83, 0.1) );
-  @include single-transition(text-shadow, 20ms);
+  /*width: 100%;
+  color: white;*/
 }
 
 .alicia article {
-  text-shadow: var(--couleur-alicia) 2px 2px 6px;
+  /*text-shadow: var(--couleur-alicia) 2px 2px 6px;*/
 }
 
 .antoine article {
-  text-shadow: var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px;
+  /*text-shadow: var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px;*/
 }
 
 .sophie article {
-  text-shadow: var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px;
+  /*text-shadow: var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px;*/
 }
 
 .chapter {
