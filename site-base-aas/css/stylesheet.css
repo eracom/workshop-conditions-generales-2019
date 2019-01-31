@@ -48,7 +48,7 @@ ul.menu>li {
 }
 
 img {
-  max-width: 100%;
+  max-width: 130%;
   filter: color(100%);
   webkit-filter: blur(10px); /* Chrome, Safari, Opera */
   filter: blur(10px);
