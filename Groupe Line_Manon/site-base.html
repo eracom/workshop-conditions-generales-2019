@@ -27,16 +27,12 @@
       <img src="flyer.png" style="height: 50px; padding: 15px"/>
       <img src="prix.png" style="height: 50px; padding: 15px"/>
 
-    </div>
-
-    <div class="etape-note">
-    <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 313px; height: 82.5vh; border: 6px solid blue; overflow: hidden">
-
-    <p>Notes</p>
+  </div> <!-- fin banniere-pictos -->
 
 
-    </div>
-    </div>
+  <div class="etape-marge">
+    <h2>zone non-imprimable</h2>
+  </div>
 
 
   <div class="echelle">
@@ -44,63 +40,50 @@
   </div>
 
 
+  <section id="wrapper"></section>
 
-<section id="wrapper"></section>
+  <div class="glissable etape-1">
+      <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
+        <p>Définition du projet, rencontre et discussion</p>
+      </div>
+  </div> <!-- fin etape -->
 
-
-    <div class="glissable etape-1">
-        <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
-
-          <p>Définition du projet, rencontre et discussion.</p>
-
-
-        </div>
-    </div>
-
-<div class="glissable etape-2">
+  <div class="glissable etape-2">
     <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 300px; height: 100px; border: 4px solid black; resize: both; overflow: hidden">
+      <p>Analyse et devis</p>
+    </div>
+  </div> <!-- fin etape -->
 
-<p>Analyse et devis</p>
+  <div class="glissable etape-3">
+    <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 300px; height: 500px; border: 4px solid black; resize: both; overflow: hidden">
+    <p>Définition de la charte graphique et création</p>
+    </div>
+  </div> <!-- fin etape -->
 
+  <div class="glissable etape-4">
+    <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 500px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
+      <p>Vérifications et remarques du client</p>
+    </div>
+  </div> <!-- fin etape -->
+
+  <div class="glissable etape-5">
+    <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
+    <p>Corrections et modifications</p>
+    </div>
+  </div> <!-- fin etape -->
+
+  <div class="glissable etape-6">
+    <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
+      <p>Finalisation</p>
+    </div>
+  </div>
+
+
+<div class="etape-note">
+  <div contenteditable="true" spellcheck="false" style="padding: 15px; width: 313px; height: 82.5vh; border: 6px solid blue; overflow-x: scroll">
+  <p>Notes</p>
+  </div>
 </div>
-</div>
-
-<div class="glissable etape-3">
-<div contenteditable="true" spellcheck="false" style="padding: 15px; width: 300px; height: 500px; border: 4px solid black; resize: both; overflow: hidden">
-
-<p>Définition de la charte graphique et création</p>
-
-</div>
-</div>
-
-<div class="glissable etape-4">
-<div contenteditable="true" spellcheck="false" style="padding: 15px; width: 500px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
-
-<p>Vérifications et remarques du client</p>
-
-
-</div>
-</div>
-
-<div class="glissable etape-5">
-<div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
-
-<p>Corrections et modifications</p>
-
-
-</div>
-</div>
-
-<div class="glissable etape-6">
-<div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 300px; border: 4px solid black; resize: both; overflow: hidden">
-
-<p>Finalisation</p>
-
-
-</div>
-</div>
-
-
 
 
 <!-- DANS SCRIPTS METTEZ VOS SCRIPTS :)-->
@@ -112,7 +95,7 @@
 
 
         $('.ajoute').click(function() {
-          var div = $('<div class="glissable etape-vide"><div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 150px; border: 4px solid black; resize: both; overflow: hidden"><p>…</p></div></div>');
+          var div = $('<div class="glissable etape-vide"><div contenteditable="true" spellcheck="false" style="padding: 15px; width: 250px; height: 60px; border: 4px solid black; resize: both; overflow: hidden"><p>…</p></div></div>');
           div.appendTo('#wrapper');
           $( ".glissable" ).draggable();
         });

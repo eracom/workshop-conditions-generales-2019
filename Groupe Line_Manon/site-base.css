@@ -37,13 +37,23 @@ h1 {
   cursor: pointer;
 }
 
-.etape-note {
-  margin-left: 1090px;
+.etape-marge {
+  left: 1117px;
   margin-top: 62px;
   position: fixed;
-  font-size: 15px;
+  border-left: 2px dashed black;
+  height: 82.5vh;
+  width: 5px;
+}
+
+h2 {
+  font-size: 10px;
   font-family: 'Poppins-Medium';
-  line-height: 20px;
+  font-weight: normal;
+  transform: rotate(-90deg);
+  width: 500px;
+  margin-left: -240px;
+  margin-top: -150px;
 }
 
 .glissable {
@@ -51,6 +61,7 @@ h1 {
     cursor: pointer;
     /* cursor: url(my-cursor.png), auto; */
     position: absolute;
+    background-color: white;
 }
 
 .ajoute {
@@ -92,6 +103,17 @@ h1 {
 .etape-vide {
   left: 500px;
   top: 100px;
+  background-color: white;
+}
+
+.etape-note {
+  right: 10px;
+  top: 120px;
+  position: fixed;
+  font-size: 15px;
+  font-family: 'Poppins-Medium';
+  line-height: 20px;
+  background-color: white;
 }
 
 /* RESPONSIVE */
@@ -130,6 +152,16 @@ h1 {
 
     .banniere-pictos {
       display: none;
+    }
+
+    .etape-note {
+      right: auto;
+      top: auto;
+      position: relative;
+      font-size: 15px;
+      font-family: 'Poppins-Medium';
+      line-height: 20px;
+      background-color: white;
     }
 
 }
