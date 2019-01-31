@@ -40,11 +40,12 @@
     </div>
     <div class="blocs antoine">
       <img class="antoine" src="img/contact/IMG_2413.JPG">
-      <article class="item txtAntoine" style="margin-top: 200px; position: relative; z-index: 1000">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment. Avoir des relations professionnelles avec des
+      <article class="item txtAntoine" style="margin-top: 200px; position: relative; z-index: 1000">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment.
+        Avoir des relations professionnelles avec des
         collaborateur&middottrice&middots jamais rencontré&middote&middots. Ne pas être retenu dans un espace défini.</article>
     </div>
     <div class="blocs alicia">
-    <img class="alicia" src="img/argent/vase.JPG">
+      <img class="alicia" src="img/argent/vase.JPG">
     </div>
     <div class="blocs sophie">
       <img src="img/argent/ARGENT_SOPHIE__Plan de travail 1" alt="">
@@ -107,35 +108,32 @@
     </div>
   </div> <!-- fin div Autrice -->
 
-  <div class="chapter engagement"
-    <div class="theme">
-      Engagement
-    </div>
-    <div class="blocs antoine">
+  <div class="chapter engagement" <div class="theme">
+    Engagement
+  </div>
+  <div class="blocs antoine">
 
-    </div>
-    <div class="blocs alicia">
+  </div>
+  <div class="blocs alicia">
     <img class="alicia" src="img/engagement/etoile.JPG">
-    </div>
-    <div class="blocs sophie">
+  </div>
+  <div class="blocs sophie">
 
-    </div>
+  </div>
   </div> <!-- fin div engagement -->
 
-  <div class="chapter contact client&middote"
-    <div class="theme">
-      Contact
-    </div>
-    <div class="blocs antoine">
+  <div class="chapter contact client&middote" <div class="theme">
+    Contact
+  </div>
+  <div class="blocs alicia">
+    <img class="alicia" src="img/contact/nuage.gif">
+  </div>
+  <div class="blocs alicia">
+    <img class="alicia" src="img/contact/txtcontact.JPG">
+  </div>
+  <div class="blocs sophie">
 
-    </div>
-    <div class="blocs alicia">
-      <img class="alicia" src="img/contact/nuage.gif">
-      <img class="alicia" src="img/contact/txtcontact.JPG">
-    </div>
-    <div class="blocs sophie">
-
-    </div>
+  </div>
   </div> <!-- fin div contact -->
 
 
@@ -145,53 +143,6 @@
       $(".glissable").draggable();
     });
     /* JUSTE EN DESSOUS METTEZ LES NOUVEAUX SCRIPTS:*/
-
-    // shim layer with setTimeout fallback
-    window.requestAnimFrame = (function() {
-      return function(callback) {
-        window.setTimeout(callback, 1000);
-      };
-    })();
-
-    $(document).ready(function() {
-
-      var $shadow = $('#shadow');
-      var shadowLimit = 200;
-      var moveEvent = ('ontouchstart' in document.documentElement) ? "touchmove" : "mousemove";
-
-      (function animloop() {
-        requestAnimFrame(animloop);
-
-        $(window).bind(moveEvent, function(ev) {
-          var $this = $(this);
-          var w = $this.width();
-          var h = $this.height();
-          var center = {
-            x: w / 2,
-            y: h / 2
-          };
-
-          var evX = (moveEvent == 'touchmove') ? ev.originalEvent.touches[0].clientX : ev.clientX;
-          var evY = (moveEvent == 'touchmove') ? ev.originalEvent.touches[0].clientY : ev.clientY;
-
-          var shadowX = (center.x - evX) / 10;
-          var shadowY = (center.y - evY) / 10;
-
-          shadowX = (shadowX > shadowLimit) ? shadowLimit : shadowX;
-          shadowX = (shadowX < shadowLimit * -1) ? shadowLimit * -1 : shadowX;
-          shadowY = (shadowY > shadowLimit) ? shadowLimit : shadowY;
-          shadowY = (shadowY < shadowLimit * -1) ? shadowLimit * -1 : shadowY;
-
-          $shadow.css({
-            textShadow: Math.ceil(shadowX) + 'px ' + Math.ceil(shadowY) + 'px ' + Math.abs(shadowX * shadowY) / 100 + 'px rgba(0,0,0,0.4)'
-          });
-
-
-        });
-      })();
-
-
-    });
   </script>
 
 </body>
