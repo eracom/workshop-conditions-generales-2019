@@ -19,38 +19,55 @@ div {
     font-style: normal;
 }
 
+@font-face {
+    font-family:'aileronblack';
+    src: url('fonts/aileron-black-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'sinkin_sans400_regular';
+    src: url('fonts/sinkinsans-400regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sinkin_sans700_bold';
+    src: url('fonts/sinkinsans-700bold-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Montserrat';
+
     font-size: 20px;
 }
-h1 {
-    font-weight: normal;
-    font-size: 40px;
-    color:green
-}
+
 p {
     padding-top: 20px;
 }
 .menu {
-  width: 20%;
+  font-family: 'aileronblack';
+  width: 30%;
   height: 100vh;
-  border: 1px solid black;
   position: fixed;
 }
+
 /* tous les divs qui sont dans menu: */
 .menu div {
-  border: 1px solid black;
   text-align: center;
 }
 
 .sous-menu  {
+  font-family:'aileronblack';
   position: absolute;
   left: 100%;
   top: 0px;
   background-color: white;
   width:300px;
-}
-
+  border: 1px solid black;
 }
 
 .sous-menu div {
@@ -58,49 +75,69 @@ p {
   text-align: left;
 }
 
+.menu-principal {
+  position: relative;
+}
+.menu-titre {
+  padding-top: 15px;
+  height:80px;
+  font-size: 40px;
+  margin: 80px;
+  background-color: black;
+  color:white;
+  text-align: center;
+
+}
+
+.texte  {
+  font-family:'sinkin_sans400_regular';
+  left: 100%;
+  top: 0px;
+  width:300px;
+}
+
+.titre-cartes{
+  font-family:'aileronblack';
+  border-bottom: 1px solid black;
+
+}
+
 .glissable {
     color: black;
 }
 
-.sous-menu-1 div {
-  border:1px solid black;
-  text-align: left;
-}
-
-.sous-menu-1{
-  position: absolute;
-  left: 100%;
-  top:0px;
-  background-color: white;
-  width:300px;
-}
-
-.sous-menu-2 div {
-  border:1px solid black;
-  text-align: left;
-}
-
-.sous-menu-2{
-  position: absolute;
-  left: 100%;
-  top:0px;
-  background-color: white;
-  width:300px;
-}
-
 .cartes{
+  font-family:'sinkin_sans400_regular';;
   position: absolute;
   background-color: white;
   width:300px;
   border: 1px solid black;
 
+
 }
+
 
 .fermer{
   position: absolute;
   top: 0;
   right: 0;
+
 }
+
+.notes{
+  font-family:'aileronblack';
+  position: absolute;
+  border: 1px solid black;
+  right: 30px;
+  top:10px;
+  width:100px;
+  height:100px;
+  text-align:center;
+  padding-top: 30px;
+  background-color: black;
+  color: white;
+  }
+
 
 .loyaute {
   left: 30%;
@@ -188,9 +225,19 @@ p {
 .color{
   position:absolute;
   top:90%
-  
-
 }
+.imprimer{
+  font-family:'aileronblack';
+  position: absolute;
+  left:30px;
+  top:500px;
+  width:300px;
+  color:black;
+}
+
+
+
+
 /* RESPONSIVE */
 
 /* ÉCRAN SEULEMENT */
