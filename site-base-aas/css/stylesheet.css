@@ -26,7 +26,7 @@
 }
 
 html {
-  background-color: #999;
+  background-color: #ddd;
 }
 
 body {
@@ -48,42 +48,32 @@ ul.menu>li {
 }
 
 img {
-  max-width: 100%;
+  max-width: 130%;
+  filter: color(100%);
+  webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
 }
 
-.alicia img {
-  border: var(--couleur-alicia) solid 1px;
-  box-shadow: var(--couleur-alicia) 2px 2px 6px, var(--couleur-alicia) 2px 2px 6px;
-}
-
-.antoine img {
-  border: var(--couleur-antoine) solid 1px;
-  box-shadow: var(--couleur-antoine) 2px 2px 6px;
-}
-
-.sophie img {
-  border: var(--couleur-sophie) solid 1px;
-  box-shadow: var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px;
+img:hover {
+  webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  filter: blur(0px);
 }
 
 article {
-  width: 100%;
-  color: white;
-  @include transform( translateZ(0) );
-  @include text-shadow(3px 3px 0px rgba(196, 23, 83, 0.1) );
-  @include single-transition(text-shadow, 20ms);
+  /*width: 100%;
+  color: white;*/
 }
 
 .alicia article {
-  text-shadow: var(--couleur-alicia) 2px 2px 6px;
+  /*text-shadow: var(--couleur-alicia) 2px 2px 6px;*/
 }
 
 .antoine article {
-  text-shadow: var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px;
+  /*text-shadow: var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px, var(--couleur-antoine) 2px 2px 6px;*/
 }
 
 .sophie article {
-  text-shadow: var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px;
+  /*text-shadow: var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px, var(--couleur-sophie) 2px 2px 6px;*/
 }
 
 .chapter {
@@ -106,4 +96,8 @@ article {
   color: white;
   display: inline-block;
   vertical-align: top;
+}
+
+body{
+  background: rgba(218,218,218,1)
 }
