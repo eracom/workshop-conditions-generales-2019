@@ -9,31 +9,111 @@ div {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    page-break-inside:avoid;
+    page-break-inside: avoid;
 }
 
 /* liens vers la typo */
-@font-face {
-    font-family:'Montserrat';
-    src: url("fonts/Montserrat-Regular.ttf");
-    font-style: normal;
-}
 
 body {
-    font-family: 'Montserrat';
-    font-size: 40px;
+    font-family: 'Poppins-Bold';
+    font-size: 25px;
     padding: 20px;
-    margin: 0 20%;
+    line-height: 28px;
 }
+
 h1 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 45px;
+    margin-top: 10px;
+    cursor:default;
 }
-p {
-    padding-top: 20px;
+
+.banniere-pictos {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  z-index: 1000;
+  cursor: pointer;
 }
+
+.etape-marge {
+  left: 1117px;
+  margin-top: 62px;
+  position: fixed;
+  border-left: 2px dashed black;
+  height: 82.5vh;
+  width: 5px;
+}
+
+h2 {
+  font-size: 10px;
+  font-family: 'Poppins-Medium';
+  font-weight: normal;
+  transform: rotate(-90deg);
+  width: 500px;
+  margin-left: -240px;
+  margin-top: -150px;
+}
+
 .glissable {
-    color: red;
+    color: black;
+    cursor: pointer;
+    /* cursor: url(my-cursor.png), auto; */
+    position: absolute;
+    background-color: white;
+}
+
+.ajoute {
+  width: 60px; height: 50px;
+  border: 2.5px solid;
+  background-color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 18px;
+  padding-top: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.etape-1 {
+  top: 121px;
+  left: 100px;
+}
+.etape-2 {
+  top: 370px;
+  left: 400px;
+}
+.etape-3 {
+  top: 500px;
+  left: 200px;
+}
+.etape-4 {
+  top: 900px;
+  left: 550px;
+}
+.etape-5 {
+  top: 1150px;
+  left: 100px;
+}
+.etape-6 {
+  top: 1400px;
+  left: 400px;
+}
+.etape-vide {
+  left: 500px;
+  top: 100px;
+  background-color: white;
+}
+
+.etape-note {
+  right: 10px;
+  top: 120px;
+  position: fixed;
+  font-size: 15px;
+  font-family: 'Poppins-Medium';
+  line-height: 20px;
+  background-color: white;
 }
 
 /* RESPONSIVE */
@@ -67,15 +147,23 @@ p {
         margin-right: 20mm;
         font-size: 20px;
     }
-    h1 {
-        font-size: 20px;
+    h1 { display: none;
     }
-    a {
-        color: black;
+
+    .banniere-pictos {
+      display: none;
     }
-    .glissable {
-        border: 2px solid red;
+
+    .etape-note {
+      right: auto;
+      top: auto;
+      position: relative;
+      font-size: 15px;
+      font-family: 'Poppins-Medium';
+      line-height: 20px;
+      background-color: white;
     }
+
 }
 
 @page {
