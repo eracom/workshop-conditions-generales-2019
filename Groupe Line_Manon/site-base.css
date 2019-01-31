@@ -61,6 +61,7 @@ h2 {
     cursor: pointer;
     /* cursor: url(my-cursor.png), auto; */
     position: absolute;
+    background-color: white;
 }
 
 .ajoute {
@@ -102,6 +103,7 @@ h2 {
 .etape-vide {
   left: 500px;
   top: 100px;
+  background-color: white;
 }
 
 .etape-note {
