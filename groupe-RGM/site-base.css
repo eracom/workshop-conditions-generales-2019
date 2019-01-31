@@ -1,4 +1,5 @@
 /* réinitialisations de base, ne pas toucher */
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 * {
     margin: 0;
     padding: 0;
@@ -12,22 +13,230 @@ div {
     page-break-inside:avoid;
 }
 
+.editable-label-text{
+    width: 250px;
+    height: 25px;
+    margin-top: 5px;
+}
+
 /* liens vers la typo */
 @font-face {
     font-family:'Montserrat';
     src: url("fonts/Montserrat-Regular.ttf");
     font-style: normal;
 }
-
+html{
+  background-color: #e14a39;
+}
 body {
-    font-family: 'Montserrat';
-    font-size: 40px;
+  height:297mm;
+  width:210mm;
+  background-color: white;
+    font-family: 'Fira Mono';
+    font-size: 20px;
     padding: 20px;
     margin: 0 20%;
+    margin-top: 50px;
+    color: blue;
+    margin-bottom:50px;
+    border: 5px;
 }
+
+.ultratitre{
+  font-family:'Fira Mono';
+  font-size: 35px;
+  text-align: center;
+  width: 500px;
+}
+.explication{
+  width: 250px;
+  position:relative;
+  font-size: 13pt;
+  text-align: left;
+  margin-left: -35%;
+  line-height: 22px;
+  margin-top: -10%;
+  border:2px;
+}
+.glisse1{
+  letter-spacing: 2px;
+}
+
+.allimages{
+  width: 175px;
+  position:relative;
+  font-size: 25px;
+  text-align: left;
+  margin-left: -50%;
+  line-height: 22px;
+  margin-top: 5%;
+}
+.impression{
+  width: 250px;
+  position:relative;
+  font-size: 13pt;
+  text-align: left;
+  line-height: 22px;
+  margin-top: 15%;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+.box   {
+  font-family:'Fira Mono';
+  font-size: 11pt;
+  background: #fff;
+  width: 280px;
+  padding-top: 2px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 30px;
+  text-align: left;
+  border: 2px solid #000;
+  letter-spacing: 2px;
+}
+.sliderun{
+  width:300px;
+  display: inline-block;
+}
+.sliderdeux{
+  width:300px;
+  display: inline-block;
+}
+.slider1{
+  width: 10px;
+  margin-top: 50px;
+  position: absolute;
+}
+.slider2{
+  width: 10px;
+  margin-top: 90px;
+  position: absolute;
+}
+.slider3{
+  width: 10px;
+  margin-top: 130px;
+  position: absolute;
+}
+.slider4{
+  width: 10px;
+  margin-top: 170px;
+  position: absolute;
+}
+.slider5{
+  width: 10px;
+  margin-top: 210px;
+  position: absolute;
+}
+.slider6{
+  width: 10px;
+  margin-top: 250px;
+  position: absolute;
+}
+.slider7{
+  width: 10px;
+  margin-top: 290px;
+  position: absolute;
+}
+.slider8{
+  width: 10px;
+  margin-top: 330px;
+  position: absolute;
+}
+.slider9{
+  width: 10px;
+  margin-top: 370px;
+  position: absolute;
+}
+.slider10{
+  width: 10px;
+  margin-top: 410px;
+  position: absolute;
+}
+.slider11{
+  width: 10px;
+  margin-top: 450px;
+  position: absolute;
+}
+.slider12{
+  width: 10px;
+  margin-top: 490px;
+  position: absolute;
+}
+.slider13{
+  width: 10px;
+  margin-top: 530px;
+  position: absolute;
+}
+.slider14{
+  width: 10px;
+  margin-top: 570px;
+  position: absolute;
+}
+.slider15{
+  width: 10px;
+  margin-top: 610px;
+  position: absolute;
+}
+.slider16{
+  width: 10px;
+  margin-top: 650px;
+  position: absolute;
+}
+.slider17{
+  width: 10px;
+  margin-top: 690px;
+  position: absolute;
+}
+.slider18{
+  width: 10px;
+  margin-top: 730px;
+  position: absolute;
+}
+.slider19{
+  width: 10px;
+  margin-top: 770px;
+  position: absolute;
+}
+.slider20{
+  width: 10px;
+  margin-top: 810px;
+  position: absolute;
+}
+
+h2 {
+  font-family: 'Fira Mono';
+  font-size: 10pt;
+  width:280px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+	background: #000;
+  text-align:left;
+	color: #fff;
+  border-bottom: 1px solid #fff;
+  line-height: 15px;
+  letter-spacing: 2px;
+	}
+
+div {
+  font-family: 'Fira Mono', sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 10px;
+  margin: 0 auto;
+  width:320px;
+}
+
+
 h1 {
+  margin-top: 3000px;
+  color: white;
+  text-shadow: 2px 2px 4px Yellow;
     font-weight: normal;
     font-size: 40px;
+    position: static;
 }
 p {
     padding-top: 20px;
@@ -36,7 +245,165 @@ p {
     color: red;
 }
 
+.invisible{display:none;}
+
+.image1 img {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+}
+
+.image2 img {
+  max-width:50px;
+  max-height: 50px;
+  position: absolute;
+  margin-top: 50px;
+}
+.image3 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.image4 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.image5 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.image6 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 250px;
+}
+
+.image7 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 300px;
+}
+.image8 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 350px;
+}
+.image9 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 400px;
+}
+.image10 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 450px;
+}
+.image11 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 500px;
+}
+.image12 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 550px;
+}
+.image13 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 600px;
+}
+.image14 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 650px;
+}
+.image15 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 700px;
+}
+.image16 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 750px;
+}
+.image17 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 800px;
+}
+.image18 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 850px;
+}
+.image19 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 900px;
+}
+.image20 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 950px;
+}
+.image21 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 1000px;
+}
+.image22 img{
+    max-width: width:50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 1050px;
+}
 /* RESPONSIVE */
+@keyframes neon {
+  from {
+    color: rgba(28, 137, 34, 0);
+    text-shadow:
+      0 0 1px #73D977,
+      0 0 5px #07520A,
+      0 0 1px #1cbb22,
+      0 0 2px #1cbb22,
+      0 0 3px #79d97d;
+  }
+  to {
+    color: rgba(28, 137, 34, 0);
+    text-shadow:
+      0 0 1.5px #73D977,
+      0 0 5px #07520A,
+      0 0 1px #1cbb22,
+      0 0 3px #1cbb22,
+      0 0 4px #79d97d;
+  }
+}
 
 /* ÉCRAN SEULEMENT */
 @media screen {
@@ -64,7 +431,6 @@ p {
     }
     body {
         margin: 0;
-        margin-right: 20mm;
         font-size: 20px;
     }
     h1 {
@@ -73,9 +439,18 @@ p {
     a {
         color: black;
     }
-    .glissable {
-        border: 2px solid red;
+    h2{
+      background: none;
+      color: black;
     }
+    .box{
+      background: none;
+      border: none;
+    }
+    .explication{
+      display: none;
+    }
+
 }
 
 @page {
