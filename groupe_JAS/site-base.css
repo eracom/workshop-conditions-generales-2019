@@ -21,7 +21,7 @@ div {
 
 body {
     font-family: 'Montserrat';
-    font-size: 40px;
+    font-size: 20px;
 }
 h1 {
     font-weight: normal;
@@ -42,6 +42,7 @@ p {
   border: 1px solid black;
   text-align: center;
 }
+
 .sous-menu  {
   position: absolute;
   left: 100%;
@@ -49,32 +50,147 @@ p {
   background-color: white;
   width:300px;
 }
+
+}
+
 .sous-menu div {
   border: 1px solid black;
   text-align: left;
 }
+
 .glissable {
-    color: red;
+    color: black;
 }
+
+.sous-menu-1 div {
+  border:1px solid black;
+  text-align: left;
+}
+
+.sous-menu-1{
+  position: absolute;
+  left: 100%;
+  top:0px;
+  background-color: white;
+  width:300px;
+}
+
+.sous-menu-2 div {
+  border:1px solid black;
+  text-align: left;
+}
+
+.sous-menu-2{
+  position: absolute;
+  left: 100%;
+  top:0px;
+  background-color: white;
+  width:300px;
+}
+
 .cartes{
   position: absolute;
   background-color: white;
   width:300px;
   border: 1px solid black;
+
 }
+
+.fermer{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .loyaute {
   left: 30%;
   top: 10px;
 }
+
 .droit-auteur {
   left: 60%;
   top: 30px;
 }
-.illegalite {
+
+.utilisation {
   left: 80%;
   top: 50vh;
 }
 
+.entretien {
+  left: 90%;
+  top: 20vh;
+}
+
+.porte {
+  left: 20%;
+  top: 10vh;
+}
+
+.prestations {
+  left: 15%;
+  top: 12vh;
+}
+
+.sous-traitance {
+  left: 15%;
+  top: 12vh;
+}
+
+.conservation {
+  left: 15%;
+  top: 12vh;
+}
+
+.presentation-individuelles {
+  left: 15%;
+  top: 12vh;
+}
+
+.exemplaires-justificatif {
+  left: 15%;
+  top: 12vh;
+}
+
+.offres {
+  left: 15%;
+  top: 12vh;
+}
+
+.facturation {
+  left: 15%;
+  top: 12vh;
+}
+.condition {
+  left: 15%;
+  top: 12vh;
+}
+
+.commissions {
+  left: 15%;
+  top: 12vh;
+}
+
+.litiges {
+  left: 15%;
+  top: 12vh;
+}
+
+.droit {
+  left: 15%;
+  top: 12vh;
+}
+
+.Juridiction {
+  left: 15%;
+  top: 12vh;
+}
+.color{
+  position:absolute;
+  top:90%
+  
+
+}
 /* RESPONSIVE */
 
 /* ÉCRAN SEULEMENT */
