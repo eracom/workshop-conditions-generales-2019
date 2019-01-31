@@ -17,20 +17,21 @@
 
   <header>
     <ul class="menu">
-      <li>Auteur&middottrice</li>
-      <li>Argent</li>
-      <li>Temps</li>
-      <li>Engagement</li>
-      <li>Contact client&middote</li>
+      <li id="menuautrice">Auteur&middottrice</li>
+      <li id="menuargent">Argent</li>
+      <li id="menutemps">Temps</li>
+      <li id="menuengagement">Engagement</li>
+      <li id="menucontact">Contact client&middote</li>
     </ul>
   </header>
-<div class="radial-gradient"></div>
-  <div class="chapter autrice">
+  <div class="radial-gradient"></div>
+
+  <div class="chapter autrice" id="autrice">
     <div class="theme">
       Auteur&middottrice
     </div>
     <div class="blocs alicia">
-        <img class="alicia" src="img/autrice/copyright.png">
+      <img class="alicia" src="img/autrice/copyright.png">
     </div>
     <div class="blocs sophie">
       <img class="sophie" src="img/contact/TOTO_GIF_AUTEUR.gif" style="width: 1000px; position: relative; z-index: 10">
@@ -42,7 +43,7 @@
       <article class="alicia">
         De la Bolivie jusqu’en Russie, le voyage ne s’arrêtera jamais. Être indépendante et travailler en itinérance semblent les seules conditions à remplir pour que je travaille.
       </article>
-      </div>
+    </div>
     <div class="blocs sophie">
       <article class="sophie">
         Au travers des processus de création artistique, nous tenterons ici de questionner le désir, dans son « en deçà », vers un « au-delà »...
@@ -61,7 +62,7 @@
     </div>
   </div> <!-- fin div Autrice -->
 
-  <div class="chapter argent" style="height: 1040px;">
+  <div class="chapter argent" id="argent" style="height: 1040px;">
     <div class="theme">
       Argent
     </div>
@@ -76,7 +77,9 @@
     </div>
     <div class="blocs alicia">
       <article class="alicia">
-        Pourtant amoureux·ses des lignes, formes et couleurs, les graphistes se retrouvent à devoir faire vendre, à faire profiter le capitalisme lui-même. La perspective de vendre nous semble tellement naturelle que les graphistes ont elleux-même commencé à se vendre. Les milieux culturels et éditoriaux n’offrant que peu de revenus, iels sont presque contraint·e·s à réaliser des visuels pour des entreprises, voire des multinationales. Notre temps qui était autrefois au service de la conception, des idées est aujourd’hui au service des ultra-riches.
+        Pourtant amoureux·ses des lignes, formes et couleurs, les graphistes se retrouvent à devoir faire vendre, à faire profiter le capitalisme lui-même. La perspective de vendre nous semble tellement naturelle que les graphistes ont elleux-même
+        commencé à se vendre. Les milieux culturels et éditoriaux n’offrant que peu de revenus, iels sont presque contraint·e·s à réaliser des visuels pour des entreprises, voire des multinationales. Notre temps qui était autrefois au service de la
+        conception, des idées est aujourd’hui au service des ultra-riches.
       </article>
     </div>
     <div class="blocs sophie">
@@ -87,7 +90,7 @@
     </div>
   </div> <!-- fin div argent -->
 
-  <div class="chapter temps">
+  <div class="chapter temps" id="temps">
     <div class="theme">
       Temps
     </div>
@@ -101,7 +104,7 @@
       <img class="antoine" src="img/temps/mon-horloge_antoine-01.png">
     </div>
     <div class="blocs antoine">
-    <article class="antoine">
+      <article class="antoine">
         Les heures de vie devraient être respectées. Cependant dans le déroulement d’un projet, il est difficile de ne pas déborder sur des heures qui devraient être consacrée à notre bien-être. Souvent à cause de la découverte d’une nouvelle piste,
         ou parce que la charge de travail s’annonce plus lourde que prévu.
       </article>
@@ -111,14 +114,14 @@
     </div>
   </div><!-- fin div temps -->
 
-  <div class="chapter engagement">
+  <div class="chapter engagement" id="engagement">
     <div class="theme">
       Engagement
     </div>
     <div class="blocs antoine">
     </div>
     <div class="blocs alicia">
-      <img class="alicia" src="img/engagement/etoile.gif"style="width:1000%;position: relative; z-index: 60">
+      <img class="alicia" src="img/engagement/etoile.gif" style="width:1000%;position: relative; z-index: 60">
     </div>
     <div class="blocs sophie">
       <article class="sophie">
@@ -133,17 +136,16 @@
         forme, de sa symbolisation, qui vise à représenter, par l'intermédiaire que constitue l'œuvre, le monde des sensations, l'expérience primaire, le noyau maternel, à représenter la relation au corps, mais grâce à une coupure avec elle.
       </article>
     </div>
-      <div class="blocs sophie">
-        <img class="sophie" src="img/engagement/ENGAGEMENT_1_-03.png" style= "width:4000px; position: relative; z-index: 10">
-      </div>
-      <div class="blocs antoine">
-        <article class="antoine">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment. Avoir des relations professionnelles avec des
-          collaborateur&middottrice&middots jamais rencontré&middote&middots. Ne pas être retenu dans un espace défini.</article>
-      </div>
-
+    <div class="blocs sophie">
+      <img class="sophie" src="img/engagement/ENGAGEMENT_1_-03.png" style="width:4000px; position: relative; z-index: 10">
+    </div>
+    <div class="blocs antoine">
+      <article class="antoine">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment. Avoir des relations professionnelles avec des
+        collaborateur&middottrice&middots jamais rencontré&middote&middots. Ne pas être retenu dans un espace défini.</article>
+    </div>
   </div> <!-- fin div engagement -->
 
-  <div class="chapter contact">
+  <div class="chapter contact" id="contact">
     <div class="theme">
       Contact
     </div>
@@ -153,10 +155,40 @@
     <div class="blocs alicia">
       <img class="alicia" src="img/contact/txtcontact.png" style="width:4000px;position: relative; z-index: 60">
     </div>
+    <div class="blocs sophie">
       <img class="sophie" src="img/contact/relation_sophie.gif" style="width:50%;position: relative; z-index: 60">
-      </div>
-    </div> <!-- fin div contact -->
+    </div>
+  </div> <!-- fin div contact -->
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#menuautrice").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#autrice").offset().top
+        }, 2000);
+      });
+      $("#menuargent").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#argent").offset().top
+        }, 2000);
+      });
+      $("#menutemps").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#temps").offset().top
+        }, 2000);
+      });
+      $("#menuengagement").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#engagement").offset().top
+        }, 2000);
+      });
+      $("#menucontact").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#contact").offset().top
+        }, 2000);
+      });
+    });
+  </script>
 </body>
 
 </html>
