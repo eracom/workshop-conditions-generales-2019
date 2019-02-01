@@ -43,7 +43,7 @@ div {
 }
 
 body {
-
+    overflow: hidden;
     font-size: 20px;
 }
 a, a:hover, a:visited {
@@ -53,6 +53,7 @@ a, a:hover, a:visited {
 p {
     padding-top: 20px;
 }
+
 .menu {
   font-family: 'aileronblack';
   width: 30%;
@@ -259,7 +260,7 @@ p {
   margin: 80px;
   color:black;
   text-align: center;
-  bottom:200px;
+  bottom:55px;
 }
 
 .rafraichir{
@@ -271,7 +272,7 @@ p {
   margin: 80px;
   color:black;
   text-align: center;
-  bottom:150px;
+  bottom:0px;
 }
 .tips {
   font-family:'aileronblack';
@@ -352,6 +353,8 @@ p {
     .notes, .menu {
       display: none;
     }
+
+
 
 } /* touche pas */
 @page {
