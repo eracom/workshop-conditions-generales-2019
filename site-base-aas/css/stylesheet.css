@@ -114,7 +114,12 @@ body {
     display: none;
   }
 
-  .last {
+  .chapter {
     page-break-after: always;
+    position: relative;
+  }
+
+  blocs{
+    position: absolute;
   }
 }
