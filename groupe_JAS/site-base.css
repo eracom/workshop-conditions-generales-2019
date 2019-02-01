@@ -259,7 +259,7 @@ p {
   margin: 80px;
   color:black;
   text-align: center;
-  top:700px;
+  bottom:200px;
 }
 
 .rafraichir{
@@ -271,7 +271,7 @@ p {
   margin: 80px;
   color:black;
   text-align: center;
-  top:650px;
+  bottom:150px;
 }
 .tips {
   font-family:'aileronblack';
@@ -349,9 +349,10 @@ p {
       display: none;
     }
 
-    .notes {
+    .notes, .menu {
       display: none;
     }
+
 } /* touche pas */
 @page {
     size: 210mm 297mm;
