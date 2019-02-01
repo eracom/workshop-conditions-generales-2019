@@ -29,34 +29,35 @@ html{
   background-color: #e14a39;
 }
 body {
-  height:297mm;
-  width:210mm;
+  height:891mm;
+  width:255mm;
   background-color: white;
     font-family: 'Fira Mono';
     font-size: 20px;
     padding: 20px;
-    margin: 0 20%;
+    margin: 0 25%;
     margin-top: 50px;
     color: blue;
     margin-bottom:50px;
     border: 5px;
 }
-
 .ultratitre{
   font-family:'Fira Mono';
   font-size: 35px;
   text-align: center;
   width: 500px;
+  font-weight: bold;
 }
 .explication{
-  width: 250px;
-  position:relative;
-  font-size: 13pt;
+  width: 300px;
+  position:absolute;
+  font-size: 11pt;
   text-align: left;
-  margin-left: -35%;
-  line-height: 22px;
-  margin-top: -10%;
+  margin-left: -340px;
+  margin-top: -86px;
   border:2px;
+  background: white;
+  padding:10px;
 }
 .glisse1{
   letter-spacing: 2px;
@@ -64,17 +65,12 @@ body {
 
 .allimages{
   width: 175px;
-  position:relative;
-  font-size: 25px;
-  text-align: left;
-  margin-left: -50%;
-  line-height: 22px;
-  margin-top: 5%;
+  position:absolute;
 }
 .impression{
-  width: 250px;
+  width: 300px;
   position:relative;
-  font-size: 13pt;
+  font-size: 11pt;
   text-align: left;
   line-height: 22px;
   margin-top: 15%;
@@ -87,120 +83,131 @@ body {
   background: #fff;
   width: 280px;
   padding-top: 2px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
   padding-bottom: 30px;
   text-align: left;
   border: 2px solid #000;
   letter-spacing: 2px;
+  hyphens: auto;
 }
 .sliderun{
   width:300px;
   display: inline-block;
 }
-.sliderdeux{
-  width:300px;
-  display: inline-block;
-}
 .slider1{
   width: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
   position: absolute;
 }
 .slider2{
   width: 10px;
-  margin-top: 90px;
+  margin-top: 40px;
   position: absolute;
+  margin-left: 666px;
 }
 .slider3{
   width: 10px;
-  margin-top: 130px;
+  margin-top: 115px;
   position: absolute;
+  margin-left: 333px;
 }
 .slider4{
   width: 10px;
-  margin-top: 170px;
+  margin-top: 205px;
   position: absolute;
 }
 .slider5{
   width: 10px;
-  margin-top: 210px;
+  margin-top: 205px;
   position: absolute;
+  margin-left: 666px;
 }
 .slider6{
   width: 10px;
-  margin-top: 250px;
+  margin-top: 280px;
   position: absolute;
+  margin-left: 333px;
 }
 .slider7{
-  width: 10px;
-  margin-top: 290px;
-  position: absolute;
-}
-.slider8{
-  width: 10px;
-  margin-top: 330px;
-  position: absolute;
-}
-.slider9{
   width: 10px;
   margin-top: 370px;
   position: absolute;
 }
+.slider8{
+  width: 10px;
+  margin-top: 370px;
+  position: absolute;
+  margin-left: 666px;
+}
+.slider9{
+  width: 10px;
+  margin-top: 445px;
+  position: absolute;
+  margin-left: 333px;
+}
 .slider10{
   width: 10px;
-  margin-top: 410px;
+  margin-top: 535px;
   position: absolute;
 }
 .slider11{
   width: 10px;
-  margin-top: 450px;
+  margin-top: 535px;
   position: absolute;
+  margin-left: 666px;
 }
 .slider12{
   width: 10px;
-  margin-top: 490px;
+  margin-top: 610px;
   position: absolute;
+  margin-left: 333px;
 }
 .slider13{
   width: 10px;
-  margin-top: 530px;
+  margin-top: 700px;
   position: absolute;
 }
 .slider14{
   width: 10px;
-  margin-top: 570px;
+  margin-top: 700px;
   position: absolute;
+  margin-left: 666px;
 }
 .slider15{
   width: 10px;
-  margin-top: 610px;
+  margin-top: 775px;
   position: absolute;
+  margin-left: 333px;
 }
 .slider16{
   width: 10px;
-  margin-top: 650px;
+  margin-top: 865px;
   position: absolute;
 }
 .slider17{
   width: 10px;
-  margin-top: 690px;
+  margin-top: 865px;
   position: absolute;
+  margin-left: 666px;
 }
 .slider18{
   width: 10px;
-  margin-top: 730px;
+  margin-top: 940px;
   position: absolute;
+  margin-left: 333px;
 }
 .slider19{
   width: 10px;
-  margin-top: 770px;
+  margin-top: 1030px;
   position: absolute;
 }
 .slider20{
   width: 10px;
-  margin-top: 810px;
+  margin-top: 1030px;
   position: absolute;
+  margin-left: 666px;
 }
 
 h2 {
@@ -209,7 +216,7 @@ h2 {
   width:280px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top:10px;
   padding-bottom: 10px;
   margin: 0;
 	background: #000;
@@ -219,7 +226,9 @@ h2 {
   line-height: 15px;
   letter-spacing: 2px;
 	}
-
+h2:hover{
+  background:#e14a39;
+}
 div {
   font-family: 'Fira Mono', sans-serif;
   text-align: center;
@@ -251,138 +260,155 @@ p {
   max-width: 50px;
   max-height: 50px;
   position: absolute;
+  margin-top:25px;
+  margin-left:300px;
 }
 
 .image2 img {
   max-width:50px;
   max-height: 50px;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 120px;
+  margin-left: -20px;
 }
 .image3 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
+    margin-left:640px;
 }
 
 .image4 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 150px;
+    margin-top: 200px;
+    margin-left:300px;
 }
 
 .image5 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 275px;
+    margin-left: -20px;
 }
 
 .image6 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 250px;
+    margin-top: 280px;
+    margin-left:620px;
 }
 
 .image7 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 360px;
+    margin-left:300px;
 }
 .image8 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 435px;
+    margin-left: -20px;
 }
 .image9 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 440px;
+    margin-left:640px;
 }
 .image10 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 450px;
+    margin-top: 530px;
+    margin-left:300px;
 }
 .image11 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 500px;
+    margin-top: 610px;
+    margin-left: -50px;
 }
 .image12 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 550px;
+    margin-top: 610px;
+    margin-left:610px;
 }
 .image13 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 600px;
+    margin-top: 690px;
+    margin-left:300px;
 }
 .image14 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 650px;
+    margin-top: 780px;
+    margin-left: -50px;
 }
 .image15 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 700px;
+    margin-top: 780px;
+    margin-left:640px;
 }
 .image16 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 750px;
+    margin-top: 860px;
+    margin-left:300px;
 }
 .image17 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 800px;
+    margin-top: 940px;
+    margin-left: -40px;
 }
 .image18 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 850px;
+    margin-top: 940px;
+    margin-left:640px;
 }
 .image19 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 900px;
+    margin-top: 1030px;
+    margin-left:300px;
 }
 .image20 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 950px;
+    margin-top: 1100px;
+    margin-left: -30px;
 }
 .image21 img{
     max-width: width:50px;
     max-height: 50px;
     position: absolute;
-    margin-top: 1000px;
+    margin-top: 1100px;
+    margin-left:640px;
 }
-.image22 img{
-    max-width: width:50px;
-    max-height: 50px;
-    position: absolute;
-    margin-top: 1050px;
-}
+
 /* RESPONSIVE */
 @keyframes neon {
   from {
@@ -440,11 +466,10 @@ p {
         color: black;
     }
     h2{
-      background: none;
+      margin-bottom: none;
       color: black;
     }
     .box{
-      background: none;
       border: none;
     }
     .explication{
