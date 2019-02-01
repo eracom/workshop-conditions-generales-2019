@@ -26,17 +26,17 @@
   </header>
   <div class="radial-gradient"></div>
 
-  <div class="chapter autrice" id="autrice">
+  <div class="chapter autrice" id="autrice" style="height: 1090px;">
     <div class="theme">
       Auteur&middottrice
     </div>
-    <div class="blocs alicia">
+    <div class="blocs alicia" id="first" style="margin-top: 1500px">
       <img class="alicia" src="img/autrice/copyright.png">
     </div>
-    <div class="blocs sophie">
+    <div class="blocs sophie" id="second" style="margin-top: 1500px">
       <img class="sophie" src="img/contact/TOTO_GIF_AUTEUR.gif" style="width: 1000px; position: relative; z-index: 10">
     </div>
-    <div class="blocs alicia">
+    <div class="blocs alicia" id="third" style="margin-top: 1500px">
       <img class="alicia" src="img/autrice/pays.png">
     </div>
     <div class="blocs alicia">
@@ -57,7 +57,7 @@
         forme, de sa symbolisation, qui vise à représenter, par l'intermédiaire que constitue l'œuvre, le monde des sensations, l'expérience primaire, le noyau maternel, à représenter la relation au corps, mais grâce à une coupure avec elle.
       </article>
     </div>
-    <div class="blocs sophie">
+    <div class="blocs sophie last">
       <img class="sophie" src="img/autrice/TOTO_GIF_AUTEUR.gif">
     </div>
   </div> <!-- fin div Autrice -->
@@ -86,12 +86,12 @@
       <img class="sophie" src="img/temps/TEMPS_2.png" style="width:1000px;position: relative; z-index: 10">
     </div>
     <img class="sophie" src="img/argent/ARGENT_SOPHIE__Plan de travail 1.png" style=" width: 2500px; position: relative; z-index: 10">
-    <article class="item txtAntoine" style="position: relative; z-index: 1000">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment.
+    <article class="antoine last" style="position: relative; z-index: 1000">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment.
       Avoir des relations professionnelles avec des
       collaborateur&middottrice&middots jamais rencontré&middote&middots. Ne pas être retenu dans un espace défini.</article>
   </div> <!-- fin div argent -->
 
-  <div class="chapter temps" id="temps">
+  <div class="chapter temps" id="temps" style="height: 1040px;">
     <div class="theme">
       Temps
     </div>
@@ -104,7 +104,7 @@
     <div class="blocs antoine">
       <img class="antoine" src="img/temps/mon-horloge_antoine-01.png">
     </div>
-    <div class="blocs antoine">
+    <div class="blocs antoine last">
       <article class="antoine">
         Les heures de vie devraient être respectées. Cependant dans le déroulement d’un projet, il est difficile de ne pas déborder sur des heures qui devraient être consacrée à notre bien-être. Souvent à cause de la découverte d’une nouvelle piste,
         ou parce que la charge de travail s’annonce plus lourde que prévu.
@@ -112,11 +112,14 @@
     </div>
   </div><!-- fin div temps -->
 
-  <div class="chapter engagement" id="engagement">
+  <div class="chapter engagement" id="engagement" style="height: 1040px;">
     <div class="theme">
       Engagement
     </div>
     <div class="blocs antoine">
+      <article class="antoine">
+        Un environnement de travail sain devrait conserver un équilibre entre une confiance de la part de la cliente
+      </article>
     </div>
     <div class="blocs alicia">
       <img class="alicia" src="img/engagement/etoile.gif" style="width:1000%;position: relative; z-index: 60">
@@ -137,13 +140,13 @@
     <div class="blocs sophie">
       <img class="sophie" src="img/engagement/ENGAGEMENT_1_-03.png" style="width:4000px; position: relative; z-index: 10">
     </div>
-    <div class="blocs antoine">
+    <div class="blocs antoine last">
       <article class="antoine">Travail distance avec des client&middote&middots de tous les pays du monde. Possibilité de voyager tout en gagnant suffisament pour vivre décemment. Avoir des relations professionnelles avec des
         collaborateur&middottrice&middots jamais rencontré&middote&middots. Ne pas être retenu dans un espace défini.</article>
     </div>
   </div> <!-- fin div engagement -->
 
-  <div class="chapter contact" id="contact">
+  <div class="chapter contact" id="contact" style="height: 1040px;">
     <div class="theme">
       Contact
     </div>
@@ -153,11 +156,15 @@
     <div class="blocs alicia">
       <img class="alicia" src="img/contact/txtcontact.png" style="width:4000px;position: relative; z-index: 60">
     </div>
-    <img class="sophie" src="img/contact/relation_sophie.gif" style="width:50%;position: relative; z-index: 60">
+    <img class="sophie last" src="img/contact/relation_sophie.gif" style="width:50%;position: relative; z-index: 60">
   </div> <!-- fin div contact -->
 
   <script type="text/javascript">
     $(document).ready(function() {
+      $('#first').delay(500).animate({'margin-top': '0'}, 6000);
+      $('#second').delay(500).animate({'margin-top': '0'}, 3000);
+      $('#third').delay(500).animate({'margin-top': '0'}, 4500);
+
       $("#menuautrice").click(function() {
         $('html, body').animate({
           scrollTop: $("#autrice").offset().top
