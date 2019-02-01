@@ -352,7 +352,7 @@ p {
     .notes {
       display: none;
     }
-
+} /* touche pas */
 @page {
     size: 210mm 297mm;
     margin: none;
