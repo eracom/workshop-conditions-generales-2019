@@ -210,6 +210,7 @@ div.gallery-text p {
         margin: 0;
         margin-right: 20mm;
         font-size: 20px;
+        background-color: none;
     }
     .h1 {
         display: none;
