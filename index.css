@@ -28,16 +28,14 @@ body {
 }
 h1 {
     font-weight: normal;
-    font-size: 50px;
+    font-size: 48px;
     text-align: center;
-    
 }
 p {
-    padding-top: 20px;
+    padding-top: 5px;
+    color: black;
 }
-.glissable {
-    color: red;
-}
+
 
 /* RESPONSIVE */
 
@@ -76,9 +74,7 @@ p {
     a {
         color: black;
     }
-    .glissable {
-        border: 2px solid red;
-    }
+
 }
 
 @page {
