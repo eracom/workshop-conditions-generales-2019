@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <div class="MEMENTO">
-    MEMENTO</div>
-    
+  <div class='tips'>
+    MEMENTO
+  </div>
+
   <div class='menu'>
     <div class="menu-principal">
       <div class="menu-titre">
@@ -85,6 +86,13 @@
     produit, le graphiste travaille selon les règles
     établies par les associations professionnelles
     des domaines.
+  </div>
+  <div class="color">
+    <div style='cursor:pointer'>
+      <span class="click-blue" style="color: blue">●</span>
+      <span class="click-yellow" style="color: yellow">●</span>
+      <span class='click-red' style='color:red'>●</span>
+    </div>
   </div>
 </div>
 
@@ -283,14 +291,7 @@
 </div>
 
 
-<div class="color">
-  <div style='cursor:pointer'>
-    <span class="click-blue" style="color: blue">●</span>
-    <span class="click-yellow" style="color: yellow">●</span>
-    <span class="click-black" style="color: black">●</span>
-    <span class='click-red' style='color:red'>●</span>
-  </div>
-</div>
+
 
 <div class="notes ajoute">
 
@@ -383,9 +384,20 @@
 
 
 
-          $('.fermer').click(function() {
+        $('.fermer').click(function() {
           $(this).parent(".cartes").hide();
         });
+
+          $('.click-blue').click(function() {
+            $(this).parents(".cartes").css("background-color", "blue");
+            $(this).parents(".cartes").css("color", "white");
+          });
+          $('.click-red').click(function() {
+            $(this).parents(".cartes").css("background-color", "red");
+          });
+          $('.click-yellow').click(function() {
+            $(this).parents(".cartes").css("border", "yellow 3px solid");
+          });
 
         $('.sous-menu').hide();
 
@@ -397,21 +409,15 @@
 
 
         $('.ajoute').click(function() {
-          var div = $('<div class="notes-nouvelles glissable"><p>…</p></div>');
+          var div = $('<div class="notes-nouvelles glissable" contenteditable="true" spellcheck="false"><p>note …</p></div>');
           div.appendTo('#wrapper');
-          $( ".glissable" ).draggable();
-
+          $(".glissable").draggable()
+          .click(function() {
+                $(this).draggable( {disabled: false});
+            }).dblclick(function() {
+                $(this).draggable({ disabled: true });
+            });
         });
-
-        var tips = [
-    "MEMENTO",
-    ];
-
-    setInterval(function() {
-        var i = Math.round((Math.random()) * tips.length);
-        if (i == tips.length) --i;
-        $("#tip").html(tips[i]);
-    }, 5 * 300);
 
 
 
