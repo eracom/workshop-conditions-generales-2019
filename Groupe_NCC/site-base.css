@@ -30,9 +30,9 @@ body {
     font-size: 20px;
     color: sienna;
     background-color: ivory;
-    -moz-transform: scale(0.7, 0.7); /* Moz-browsers */
-    zoom: 0.7; /* Other non-webkit browsers */
-    zoom: 70%; /* Webkit browsers */
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.8; /* Other non-webkit browsers */
+    zoom: 80%; /* Webkit browsers */
 }
 .h1 {
   font-size: 100px;
