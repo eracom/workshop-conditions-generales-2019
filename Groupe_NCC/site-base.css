@@ -30,10 +30,9 @@ body {
 }
 .h1 {
   font-family:'DINNextLTPro-Condensed';
-  font-size: 60px;
+  font-size: 140px;
   text-align: center;
 }
-
 
 
 div.affiche {
@@ -47,9 +46,18 @@ div.affiche {
   background-color: white;
 }
 
+.description {
+  position: absolute;
+  top: 6cm;
+  left: 50%;
+  margin-left: -25cm;
+  padding: 10px;
+  width: 11cm;
+}
+
 .outils {
   position: absolute;
-  top: 150px;
+  top: 6cm;
   left: 50%;
   margin-left: -10.5cm;
   width: 21cm;
@@ -59,10 +67,11 @@ div.affiche {
 .typo, .taille-images, .couleur-fond, .couleur-typo, .categories-textes {
   font-size: 40px;
   margin-right: 30px;
+}
+.typo, .taille-images, .couleur-fond, .couleur-typo {
+  display: inline-block;
+  width: 9cm;
   }
-  .typo, .taille-images, .couleur-fond, .couleur-typo {
-    display: inline-block;
-    }
 
 
 .plus, .moins {
@@ -70,9 +79,9 @@ div.affiche {
   margin: 30px 5px 0px 5px;
   margin-top: auto;
   border: 1px solid sienna;
-  border-radius: 30px;
-  width: 35px;
-  height: 35px;
+  border-radius: 37px;
+  width: 42px;
+  height: 42px;
   text-align: center;
 }
 .plus:hover, .moins:hover {
@@ -128,7 +137,7 @@ div.affiche {
 
 .outils2 {
   position: absolute;
-  top: 150px;
+  top: 6cm;
   left: 50%;
   margin-left: 11cm;
   padding: 10px;
@@ -196,14 +205,11 @@ div.gallery-text p {
         margin-right: 20mm;
         font-size: 20px;
     }
-    h1 {
-        font-size: 20px;
+    .h1 {
+        display: none;
     }
     a {
         color: black;
-    }
-    .glissable {
-        border: 2px solid red;
     }
     .outils {
       display: none;
@@ -211,8 +217,14 @@ div.gallery-text p {
 
     .affiche {
       overflow: hidden;
+      left: 0;
+      margin-left: 0;
+      margin-top: 0;
     }
     .outils, .outils2 {
+      display: none;
+    }
+    .description {
       display: none;
     }
 }
