@@ -101,3 +101,12 @@ article {
 body{
   background: rgba(218,218,218,1)
 }
+
+@media print {
+  * {
+    color: black;
+    background-color: initial;
+  }
+  header {
+   display: none; }
+}
