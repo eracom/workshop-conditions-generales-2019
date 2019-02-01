@@ -79,7 +79,9 @@ article {
 }
 
 .chapter {
+  position: relative;
   margin-top: 10px;
+  min-height: 100vh;
 }
 
 .theme {
@@ -91,7 +93,7 @@ article {
 }
 
 .blocs {
-  width: 29%;
+  position: absolute;
 }
 
 .theme, .blocs {
