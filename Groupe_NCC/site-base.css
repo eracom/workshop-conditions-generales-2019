@@ -15,21 +15,23 @@ div {
 
 /* liens vers la typo */
 @font-face {
-    font-family:'DINNextLTPro-Conden';
-    src: url("fonts/DINNextLTPro-Condensed.otf");
+    font-family: 'regloregular';
+    src: url('fonts/reglo-bold.woff2') format('woff2'),
+         url('fonts/reglo-bold.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+
 }
 
 
 body {
-    font-family: 'DINNextLTPro-Condensed';
+    font-family: 'regloregular';
     padding: 20px;
     font-size: 20px;
     color: sienna;
     background-color: ivory;
 }
 .h1 {
-  font-family:'DINNextLTPro-Condensed';
   font-size: 140px;
   text-align: center;
 }
@@ -50,9 +52,10 @@ div.affiche {
   position: absolute;
   top: 6cm;
   left: 50%;
-  margin-left: -25cm;
+  margin-left: -23cm;
   padding: 10px;
   width: 11cm;
+  font-size: 40px;
 }
 
 .outils {
@@ -155,7 +158,7 @@ div.gallery-img {
   padding: 10px;
 }
 div.gallery-img img {
-  width: 50%;
+  width: 70%;
 }
 
 div.gallery-text {
