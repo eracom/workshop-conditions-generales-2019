@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div class="ultratitre">Conditions de travail</div>
+<div class="ultratitre">CONDITIONS DE TRAVAIL</div>
 
 <div class='sliderun'>
 
@@ -101,9 +101,7 @@
             </div>
             <div class="holder">
               <p class="box">
-                <label class="editable" style="cursor:text">Les principes de l’offre ainsi que de la facturation des honoraires sont fondés sur le système de calcul des honoraires .
-                Les honoraires du graphiste sont établis sur la base de son taux horaire personnel et du temps nécessaire à la réalisation du mandat.
-                La soumission d’une offre écrite est recommandée. Le graphiste communiquera immédiatement au client tout coût supplémentaireengendré par une modification des objectifs du mandat. Ces coûts supplémentaires seront clairement évoqués lors de la facturation.
+                <label class="editable" style="cursor:text">Les principes de l’offre ainsi que de la facturation des honoraires sont fondés sur le système de calcul des honoraires. Les honoraires du graphiste sont établis sur la base de son taux horaire personnel et du temps nécessaire à la réalisation du mandat. La soumission d’une offre écrite est recommandée. Le graphiste communiquera immédiatement au client tout coût supplémentaireengendré par une modification des objectifs du mandat. Ces coûts supplémentaires seront clairement évoqués lors de la facturation.
                 </label>
               </p>
             </div>
@@ -145,8 +143,7 @@
             </div>
             <div class="holder">
               <p class="box">
-                <label class="editable" style="cursor:text">Les honoraires de présentation individuelle sont convenus avant le début du mandat. En outre,
-                les dispositions suivantes relatives aux honoraires sont applicables.
+                <label class="editable" style="cursor:text">Les honoraires de présentation individuelle sont convenus avant le début du mandat. En outre, les dispositions suivantes relatives aux honoraires sont applicables.
                 </label>
               </p>
             </div>
@@ -230,12 +227,7 @@
           </div>
           <div class="holder">
             <p class="box">
-              <label class="editable" style="cursor:text">Ce n’est qu’après le règlement des honoraires que le droit d’utilisation du travail réalisé est accordé.
-              Le contrat du mandat détermine la portée de l’utilisation autorisée des réalisations créées par le graphiste. Le client ne peut utiliser les réalisations et les documents créés seulement dans le cadre prévu.
-              Sauf dispositions contraires, ce droit d’utilisation est illimité géographiquement et temporellement.
-              Il interdit toute utilisation ne correspondant pas à l’objet du contrat.
-              Cependant, les parties peuvent convenir d’usages ne relevant pas de l’objet du contrat.
-              Le client a le devoir, pour toute utilisation ne relevant pas de l’objet du contrat, d’obtenir l’autorisation du graphiste et le rémunérer en conséquence.
+              <label class="editable" style="cursor:text">Ce n’est qu’après le règlement des honoraires que le droit d’utilisation du travail réalisé est accordé. Le contrat du mandat détermine la portée de l’utilisation autorisée des réalisations créées par le graphiste. Le client ne peut utiliser les réalisations et les documents créés seulement dans le cadre prévu. Sauf dispositions contraires, ce droit d’utilisation est illimité géographiquement et temporellement. Il interdit toute utilisation ne correspondant pas à l’objet du contrat. Cependant, les parties peuvent convenir d’usages ne relevant pas de l’objet du contrat. Le client a le devoir, pour toute utilisation ne relevant pas de l’objet du contrat, d’obtenir l’autorisation du graphiste et le rémunérer en conséquence.
               </label>
             </p>
           </div>
@@ -249,8 +241,7 @@
           </div>
           <div class="holder">
             <p class="box">
-              <label class="editable" style="cursor:text">Le graphiste reste le propriétaire des droits d’auteur de tout élément créé (concepts, recherches, esquisses, croquis, illustrations, etc.). La Loi fédérale sur le droit d’auteur et les droits voisins du 9 octobre 1992 définit ses droits.
-              Il en résulte que le client n’a pas l’autorisation, sans l’accord du graphiste , d’utiliser les réalisations en question et/ou de procéder à des changements, particulièrement en ce qui concerne la conception et les détails de finition.
+              <label class="editable" style="cursor:text">Le graphiste reste le propriétaire des droits d’auteur de tout élément créé (concepts, recherches, esquisses, croquis, illustrations, etc.). La Loi fédérale sur le droit d’auteur et les droits voisins du 9 octobre 1992 définit ses droits. Il en résulte que le client n’a pas l’autorisation, sans l’accord du graphiste , d’utiliser les réalisations en question et/ou de procéder à des changements, particulièrement en ce qui concerne la conception et les détails de finition.
               </label>
             </p>
           </div>
@@ -316,8 +307,9 @@
 <div class="explication">
   <span class='glisse1'>Si vous ne souhaitez pas un élément (icône ou paragraphe), glissez-le dans la marge de gauche.</span>
   <div class='impression'>
-    <span style="cursor:pointer">Imprimer la page</span>
+    <span style="cursor:pointer">imprimer la page</span>
   </div>
+  <br><a href="#" id="button">cacher les icônes</a>
 </div>
 
 <div class="allimages">
@@ -451,7 +443,6 @@
 </div>
 
 <h1>
-
 </h1>
 
 
@@ -499,11 +490,27 @@ $('.holder').on('click', "label.editable", function() {
   return false; // why false?
 });
 
+
+//background color
 var bg = "#";
-var options = ['e14a39','4900ff','ffc100','73ffde']
-    bg += options[Math.floor(Math.random()*4)];
+var options = ['e14a39','4900ff','ffc100','00e1c5','8b31ff']
+    bg += options[Math.floor(Math.random()*5)];
    document.getElementsByTagName('html')[0].style.background = bg;
    $("h2").css({"background": bg});
+
+
+//button
+    $('#button').click( function(e) {
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.allimages').toggle();
+    });
+    $('.allimages').click( function(e) {
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+    });
+    $('button').click( function() {
+        $('.allimages').hide();
+    });
 
     </script>
 </body>
