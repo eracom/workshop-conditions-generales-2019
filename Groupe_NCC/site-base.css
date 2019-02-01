@@ -15,7 +15,7 @@ div {
 
 /* liens vers la typo */
 @font-face {
-    font-family:'DINNextLTPro-Condensed';
+    font-family:'DINNextLTPro-Conden';
     src: url("fonts/DINNextLTPro-Condensed.otf");
     font-style: normal;
 }
@@ -29,17 +29,9 @@ body {
     font-family: 'DINNextLTPro-Condensed';
     padding: 20px;
     font-size: 20px;
+    background-color: ivory;
 }
 
-.titre-affiche {
-  font-family:'YatraOne';
-  src: url("fonts/Yatra_One/YatraOne-Regular.ttf");
-  font-style: normal;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 65px;
-  line-height: 64px;
-}
 
 
 p {
@@ -55,22 +47,27 @@ p {
 
 
 div.affiche {
-  border: 5px solid #ccc;
+  border: 1px solid gainsboro;
   width: 21cm;
   height: 29.7cm;
   position: relative;
   left: 50%;
   margin-left: -10.5cm;
-  margin-top: 6cm;
+  margin-top: 8cm;
+  background-color: white;
 }
 
 .outils {
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 50%;
   margin-left: -10.5cm;
   width: 21cm;
 }
+.typo {
+
+}
+
 .plus, .moins {
   display: inline-block;
   margin: 30px 5px 0px 5px;
@@ -84,22 +81,59 @@ div.affiche {
 .plus:hover, .moins:hover {
   cursor: pointer;
 }
-.typo {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 30px;
+
+.taille-images {
+
 }
+
+
+.couleur1{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #FFE4C4;
+}
+.couleur2{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #5F9EA0;
+}
+.couleur3{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #DCDCDC;
+}
+.couleur4{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #8FBC8F;
+}
+.couleur5{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #B0C4DE;
+}
+.couleur1, .couleur2,.couleur3, .couleur4, .couleur5 {
+  display: inline-block;
+  margin: 10px 10px 0px 0px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+
+
 .outils2 {
   position: absolute;
   top: 90px;
   left: 50%;
   margin-left: 11cm;
   width: 21cm;
-}
-
-div.typo {
-  margin: 5px;
-  width: 180px;
 }
 
 div.gallery-img {
@@ -118,6 +152,7 @@ div.gallery-text {
 div.gallery-text p {
     font-size: 20px;
 }
+
 
 .glissable {
     color: black;
@@ -167,6 +202,13 @@ div.gallery-text p {
         border: 2px solid red;
     }
     .outils {
+      display: none;
+    }
+
+    .affiche {
+      overflow: hidden;
+    }
+    .outils, .outils2 {
       display: none;
     }
 }
