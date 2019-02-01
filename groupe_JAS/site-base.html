@@ -87,13 +87,6 @@
     établies par les associations professionnelles
     des domaines.
   </div>
-  <div class="color">
-    <div style='cursor:pointer'>
-      <span class="click-blue" style="color: blue">●</span>
-      <span class="click-yellow" style="color: yellow">●</span>
-      <span class='click-red' style='color:red'>●</span>
-    </div>
-  </div>
 </div>
 
 
@@ -388,28 +381,35 @@
           $(this).parent(".cartes").hide();
         });
 
-          $('.click-blue').click(function() {
-            $(this).parents(".cartes").css("background-color", "blue");
-            $(this).parents(".cartes").css("color", "white");
+
+        var div = $('<div class="color" style="cursor: pointer"><span class="click-couleur1">●</span><span class="click-couleur2">●</span><span class="click-couleur3">●</span><span class="click-couleur4">●</span></div>');
+            div.appendTo('.cartes');
+
+
+          $('.click-couleur1').click(function() {
+            $(this).parents(".cartes").css("border", "#00BFFF 3px solid");
           });
-          $('.click-red').click(function() {
-            $(this).parents(".cartes").css("background-color", "red");
-          });
-          $('.click-yellow').click(function() {
+          $('.click-couleur2').click(function() {
             $(this).parents(".cartes").css("border", "yellow 3px solid");
+          });
+          $('.click-couleur3').click(function() {
+            $(this).parents(".cartes").css("border", "#FF1493 3px solid");
+          });
+          $('.click-couleur4').click(function() {
+            $(this).parents(".cartes").css("border", "black 3px solid");
           });
 
         $('.sous-menu').hide();
 
         $('.menu-principal').click(function() {
-          $('.sous-menu').hide();
+          $('.menu-principal').not(this).find('.sous-menu').hide();
           $(this).find('.sous-menu').toggle();
         });
 
 
 
         $('.ajoute').click(function() {
-          var div = $('<div class="notes-nouvelles glissable" contenteditable="true" spellcheck="false"><p>note …</p></div>');
+          var div = $('<div class="notes-nouvelles glissable" contenteditable="true" spellcheck="false"><div class="fermer">x</div><p>note …</p></div>');
           div.appendTo('#wrapper');
           $(".glissable").draggable()
           .click(function() {
@@ -417,7 +417,11 @@
             }).dblclick(function() {
                 $(this).draggable({ disabled: true });
             });
+            $('.fermer').click(function() {
+              $(this).parent(".notes-nouvelles").hide();
+            });
         });
+
 
 
 

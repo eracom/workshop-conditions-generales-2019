@@ -41,10 +41,21 @@ ul.menu {
   font-size: 2em;
   text-transform: uppercase;
   list-style-type: none;
+  top: -25px;
+  left: -30px;
+  z-index: 5; 
 }
 
 ul.menu>li {
   cursor: pointer;
+}
+
+.intro {
+  color: white;
+  font-family: 'Metropolis', serif;
+  font-size: 2em;
+  margin-left: 40%;
+  margin-bottom: 20%;
 }
 
 img {
@@ -85,6 +96,7 @@ article {
 }
 
 .theme {
+  font-size: 2em;
   width: 10%;
   height: calc(100% - 10px);
   padding: 5px;
