@@ -50,12 +50,14 @@ ul.menu>li {
 img {
   max-width: 100%;
   filter: color(100%);
-  webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  webkit-filter: blur(10px);
+  /* Chrome, Safari, Opera */
   filter: blur(10px);
 }
 
 img:hover {
-  webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+  webkit-filter: blur(0px);
+  /* Chrome, Safari, Opera */
   filter: blur(0px);
 }
 
@@ -98,8 +100,8 @@ article {
   vertical-align: top;
 }
 
-body{
-  background: rgba(218,218,218,1)
+body {
+  background: rgba(218, 218, 218, 1)
 }
 
 @media print {
@@ -107,6 +109,12 @@ body{
     color: black;
     background-color: initial;
   }
+
   header {
-   display: none; }
+    display: none;
+  }
+
+  .last {
+    page-break-after: always;
+  }
 }
