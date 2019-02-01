@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  <div class="MEMENTO">
+    MEMENTO</div>
+    
   <div class='menu'>
     <div class="menu-principal">
       <div class="menu-titre">
@@ -289,17 +292,22 @@
   </div>
 </div>
 
-<div class="notes glissable">
-  <input type="text" name="" value="Notes"></input>
+<div class="notes ajoute">
+
   Notes
   <!-- <div contenteditable="true">
   ...  </div> -->
 </div>
 
+  <section id="wrapper"></section>
+
 <div class="imprimer">
+  <a href="javascript:window.print()">Imprimer</a>
+</div>
 
-  <a href="javascript:window.print()"><img src="../../images/click-here-to-print.jpg" alt="Imprimer" id="print-button" /></a>
+<div class="rafraichir">
 
+<a href="">Rafraîchir</a>
 </div>
 
 
@@ -388,7 +396,22 @@
 
 
 
+        $('.ajoute').click(function() {
+          var div = $('<div class="notes-nouvelles glissable"><p>…</p></div>');
+          div.appendTo('#wrapper');
+          $( ".glissable" ).draggable();
 
+        });
+
+        var tips = [
+    "MEMENTO",
+    ];
+
+    setInterval(function() {
+        var i = Math.round((Math.random()) * tips.length);
+        if (i == tips.length) --i;
+        $("#tip").html(tips[i]);
+    }, 5 * 300);
 
 
 
