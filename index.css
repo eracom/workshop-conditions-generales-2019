@@ -21,14 +21,16 @@ div {
 
 body {
     font-family: 'Montserrat';
-    font-size: 40px;
+    font-size: 20px;
     padding: 20px;
-    margin: 0 20%;
-    color: blue;
+    margin: 0;
+    color: black;
 }
 h1 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    
 }
 p {
     padding-top: 20px;

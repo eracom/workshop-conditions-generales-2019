@@ -227,7 +227,7 @@ h2 {
   letter-spacing: 2px;
 	}
 h2:hover{
-  background:#e14a39;
+  background: #000 !important;
 }
 div {
   font-family: 'Fira Mono', sans-serif;
