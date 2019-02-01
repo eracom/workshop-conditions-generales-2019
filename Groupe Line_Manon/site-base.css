@@ -14,6 +14,22 @@ div {
 
 /* liens vers la typo */
 
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/poppins-bold.woff2') format('woff2'),
+         url('fonts/poppins-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('fonts/poppins-medium.woff2') format('woff2'),
+         url('fonts/poppins-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Poppins-Bold';
     font-size: 25px;
