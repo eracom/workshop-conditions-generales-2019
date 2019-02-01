@@ -35,6 +35,10 @@ p {
     padding-top: 5px;
     color: black;
 }
+a, a:visited, a:focus, a:hover {
+  text-decoration: none;
+  color: black;
+}
 
 
 /* RESPONSIVE */
