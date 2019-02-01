@@ -162,10 +162,12 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
+      //Animation d'introduction
       $('#first').delay(500).animate({'margin-top': '0'}, 6000);
       $('#second').delay(500).animate({'margin-top': '0'}, 3000);
       $('#third').delay(500).animate({'margin-top': '0'}, 4500);
 
+      //Animation liens menu
       $("#menuautrice").click(function() {
         $('html, body').animate({
           scrollTop: $("#autrice").offset().top
